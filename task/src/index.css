@@ -2,11 +2,12 @@
   background: #f5f5f5;
   min-height: 850px;
   padding-top: 5%;
+  overflow: hidden;
 }
 
 .box {
   background: #fff;
-  height: 600px;
+  min-height: 600px;
   width: 70%;
   box-shadow: 0 4px 5px -3px lightgray;
 }
@@ -37,6 +38,14 @@ h2 {
   font-family: sans-serif;
   font-weight: 100;
   margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 23px;
+  font-family: sans-serif;
+  font-weight: 100;
+  margin-bottom: 20px;
+  display: none;
 }
 
 #stars-img {
@@ -103,6 +112,46 @@ h2 {
   color: #e60000;
 }
 
-.price-section .section1 {
+.section1 {
   border-right: solid #cccccc 1px;
+}
+
+@media (max-width: 1200px) {
+  #root {
+    min-height: 1300px;
+  }
+  h2 {
+    display: none;
+  }
+  h3 {
+    text-align: center;
+    display: block;
+    margin-top: 40px;
+  }
+  .phone-img {
+    height: 300px;
+  }
+  .price-section {
+    height: 180px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .box {
+    width: 90%;
+  }
+  .info-section, .phone-img-section {
+    text-align: center;
+  }
+  .phone-img {
+    margin-left: 0;
+  }
+  .section1 {
+    border-right: none;
+  }
+}
+
+@media (max-width: 440px) {
+  .phone-img {
+    height: 250px;
+  }
 }

@@ -29,6 +29,7 @@ class Page extends Component {
     return (
       <div className="container box">
         <div className="row">
+          <h3>Apple iPhone 8</h3>
           <div className="col-lg-6 phone-img-section">
           {/* Here we are placing the content of the image property in the state object into the space the curly brackets occupy. JavaScript that
            is used in within the JSX must always be contained in curly braces. */}
@@ -44,9 +45,9 @@ class Page extends Component {
                 <p>Colour:<span>{this.state.color}</span></p>
                 <div className="row">
                 {/* The setState methods below change the state properties of the images when clicked to what is specified in the method. */}
-                  <div className="col-lg-4 colour-choice" id="gold-choice" onClick={() => this.setState({image: <img src={require('./img/iPhone8-Gold.png')} alt="gold-iPhone" className="phone-img" />, color: ' Gold'})}></div>
-                  <div className="col-lg-4 colour-choice" id="silver-choice" onClick={() => this.setState({image: <img src={require('./img/iPhone8-Silver.png')} alt="silver-iPhone" className="phone-img" />, color: ' Silver'})}></div>
-                  <div className="col-lg-4 colour-choice" id="grey-choice" onClick={() => this.setState({image: <img src={require('./img/iPhone8-Space-Grey.png')} alt="grey-iPhone" className="phone-img" />, color: ' Space Grey'})}></div>
+                  <div className="col-xs-12 col-sm-12 col-lg-4 colour-choice" id="gold-choice" onClick={() => this.setState({image: <img src={require('./img/iPhone8-Gold.png')} alt="gold-iPhone" className="phone-img" />, color: ' Gold'})}></div>
+                  <div className="col-xs-12 col-sm-12 col-lg-4 colour-choice" id="silver-choice" onClick={() => this.setState({image: <img src={require('./img/iPhone8-Silver.png')} alt="silver-iPhone" className="phone-img" />, color: ' Silver'})}></div>
+                  <div className="col-xs-12 col-sm-12 col-lg-4 colour-choice" id="grey-choice" onClick={() => this.setState({image: <img src={require('./img/iPhone8-Space-Grey.png')} alt="grey-iPhone" className="phone-img" />, color: ' Space Grey'})}></div>
                 </div>
               </div>
                 <div className="col-lg-6 capacity-section">
@@ -56,10 +57,10 @@ class Page extends Component {
                 </div>
               </div>
                 <div className="price-section">
-                  <div className="col-lg-6 section1">
+                  <div className="col-md-12 col-lg-6 section1">
                     <p>from <span>{data.upfrontCost}</span> upfront cost</p>
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-md-12 col-lg-6">
                     <p>When you pay <span>{this.state.monthlyCost}</span> a month</p>
                   </div>
                 </div>
